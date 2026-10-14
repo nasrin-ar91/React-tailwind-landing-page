@@ -14,7 +14,7 @@ export const benefitData: BenefitData[] = [
 		shadowColor: "shadow-teal-200",
 	},
 	{
-		img: "/images/dumbbell.png",
+		img: "/images/time-track.png",
 		benefitText: "Real-time Tracking",
 
 		benefitParagh:

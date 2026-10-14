@@ -21,9 +21,9 @@ export default function Header() {
 	];
 	return (
 		<div className="flex flex-col items-center gap-8 bg-gradient-to-br from-teal-300 via-purple-300 to-rose-200 w-full h-fit px-10 py-3">
-			<div className="flex items-center justify-between w-full">
+			<div className="flex items-center justify-between w-full fixed top-0 inset-x-0 z-50 px-8 py-3 backdrop-blur-md">
 				<img src="/images/logo.png" alt="logo" className="w-50" />
-				<div className="flex items-center gap-6">
+				<div className="flex items-center gap-6 shrink-0">
 					{headerItems.map((headerItem) => (
 						<a
 							href={headerItem.link}
@@ -43,9 +43,12 @@ export default function Header() {
 					<Button
 						text={"Sign Up"}
 						bg={"bg-gradient-to-r from-purple-500 to-pink-500"}
+						w={"w-40"}
 					/>
 				</div>
 			</div>
+
+			<div className="h-20 shrink-0" />
 
 			<div className="flex justify-between w-full gap-6">
 				<div className="flex flex-col gap-4 w-[cal]">
@@ -55,13 +58,14 @@ export default function Header() {
 					<h2 className="text-blue-900 font-bold text-2xl">
 						with Flex Flow: Personalized Workouts, Anytime, Anywhere
 					</h2>
-					<p className="text-blue-950 text-xl font-semibold">
+					<p className="text-blue-950 text-xl font-semibold w-[95%]">
 						Achieve your fitness goals with AI-driven plans and a supportive
 						community.
 					</p>
 					<Button
 						text={"Start Your 7-Day Trial"}
 						bg={"bg-gradient-to-r from-purple-500 to-pink-500"}
+						w={"w-[60%]"}
 					/>
 				</div>
 				<img
