@@ -20,58 +20,58 @@ export default function Header() {
 		},
 	];
 	return (
-		<div className="flex flex-col items-center gap-8 bg-gradient-to-br from-teal-300 via-purple-300 to-rose-200 w-full h-fit px-10 py-3">
-			<div className="flex items-center justify-between w-full fixed top-0 inset-x-0 z-50 px-8 py-3 backdrop-blur-md">
-				<img src="/images/logo.png" alt="logo" className="w-50" />
-				<div className="flex items-center gap-6 shrink-0">
+		<div className="flex flex-col items-center gap-8 bg-gradient-to-br from-teal-300 via-purple-300 to-rose-200 w-full h-fit px-10 py-4 ">
+			<div className="flex items-center justify-between w-full fixed top-0 inset-x-0 z-50 px-8 lg:px-15 py-3 backdrop-blur-md">
+				<img src="/images/logo.png" alt="logo" className="w-35 md:w-50" />
+				<div className="hidden md:flex items-center gap-6 lg:gap-15 shrink-0">
 					{headerItems.map((headerItem) => (
 						<a
 							href={headerItem.link}
-							className="text-blue-950 relative active:no-underline font-semibold after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-blue-900 after:transition-all after:duration-300 hover:after:w-full"
+							className="text-blue-950 lg:text-xl relative active:no-underline font-semibold after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-blue-900 after:transition-all after:duration-300 hover:after:w-full"
 						>
 							{headerItem.title}
 						</a>
 					))}
 				</div>
-				<div className="flex gap-6 items-center">
+				<div className="flex gap-3 lg:gap-8 items-center">
 					<a
 						href="/login"
-						className="text-blue-950 relative active:no-underline font-semibold after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-blue-900 after:transition-all after:duration-300 hover:after:w-full"
+						className="text-blue-950 text-sm lg:text-lg font-semibold md:font-bold relative active:no-underline after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-blue-900 after:transition-all after:duration-300 hover:after:w-full"
 					>
 						Log in
 					</a>
 					<Button
 						text={"Sign Up"}
 						bg={"bg-gradient-to-r from-purple-500 to-pink-500"}
-						w={"w-40"}
+						w={"w-24 md:w-32 lg:w-40"}
 					/>
 				</div>
 			</div>
 
-			<div className="h-20 shrink-0" />
+			<div className="h-12 md:h-20 lg:h-24 shrink-0" />
 
-			<div className="flex justify-between w-full gap-6">
-				<div className="flex flex-col gap-4 w-[cal]">
-					<h1 className="text-blue-900 font-bold text-4xl mb-2">
+			<div className="flex flex-col md:flex-row justify-between w-full gap-6 lg:px-10">
+				<div className="flex flex-col gap-4 lg:gap-8">
+					<h1 className="text-blue-900 font-bold text-3xl md:text-4xl mb-2">
 						Unlock Your Potential
 					</h1>
-					<h2 className="text-blue-900 font-bold text-2xl">
+					<h2 className="text-blue-900 font-bold text-xl md:text-2xl">
 						with Flex Flow: Personalized Workouts, Anytime, Anywhere
 					</h2>
-					<p className="text-blue-950 text-xl font-semibold w-[95%]">
+					<p className="text-blue-950 text-lg md:text-xl font-semibold w-full md:w-[95%]">
 						Achieve your fitness goals with AI-driven plans and a supportive
 						community.
 					</p>
 					<Button
 						text={"Start Your 7-Day Trial"}
 						bg={"bg-gradient-to-r from-purple-500 to-pink-500"}
-						w={"w-[60%]"}
+						w={"w-full md:w-[94%] lg:w-[92%]"}
 					/>
 				</div>
 				<img
 					src="/images/visualImage.png"
 					alt="visualImage"
-					className="w-100 rounded-lg"
+					className="w-80 rounded-2xl lg:w-120 "
 				></img>
 			</div>
 		</div>

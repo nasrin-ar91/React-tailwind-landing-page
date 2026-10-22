@@ -2,15 +2,21 @@
 
 
 .mySwiper {
-  /* padding: 10px 50px 50px 50px; */
-  --swiper-navigation-size: 40px;
+  width: 100%;
+  overflow: hidden !important;
+  --swiper-navigation-size: 20px;
+  box-sizing: border-box;
+  padding: 10px 50px 30px !important;
 }
+
 
 .mySwiper .swiper-button-next,
 .mySwiper .swiper-button-prev {
   background-color: white;
   border-radius: 50%;
   z-index: 10;
+  width: 40px;
+  height: 40px;
 
 }
 

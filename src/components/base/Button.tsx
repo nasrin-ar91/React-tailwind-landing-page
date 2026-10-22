@@ -6,7 +6,7 @@ export type ButtonProbs = {
 export default function Button({ text, bg, w }: ButtonProbs) {
 	return (
 		<button
-			className={`${bg} text-white text-lg font-bold px-8 py-2 rounded-full cursor-pointer ${w}`}
+			className={`${bg} text-white text-sm md:text-lg font-bold p-2 lg:p-3 rounded-full cursor-pointer ${w}`}
 		>
 			{text}
 		</button>
